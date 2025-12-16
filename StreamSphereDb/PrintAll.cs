@@ -48,6 +48,7 @@ namespace StreamSphereDb
             Console.WriteLine("Skriv in förnamn på en skådespelare nedan: ");
             string choice = Console.ReadLine();
 
+                //Typ Joins
             var filteredActor = DbContext.ActorsInMovies
                                 .Include(a => a.Actor)
                                 .Include(a => a.Movie)
